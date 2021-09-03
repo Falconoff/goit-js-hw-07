@@ -15,3 +15,17 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const galleryEl = document.querySelector('#gallery');
+
+// console.log(galleryEl);
+
+const imgTagsArray = images.map(image => {
+  // console.log(`<img src="${image.url}" alt="${image.alt}">`);
+  return `<li class="gallery__item"><img class="gallery__img" src="${image.url}" alt="${image.alt}"></li>`;
+});
+
+// console.log(imgTagsArray);
+// console.log(imgTagsArray.join('')); // makes string without commas
+
+galleryEl.insertAdjacentHTML('afterbegin', imgTagsArray.join(''));

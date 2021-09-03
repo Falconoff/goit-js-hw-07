@@ -37,5 +37,7 @@ const makeListFromArray = array => {
   });
 };
 
-const ingredientsLayoutArray = makeListFromArray(ingredients);
-ingredientsList.append(...ingredientsLayoutArray);
+// const ingredientsLayoutArray = makeListFromArray(ingredients);
+// ingredientsList.append(...ingredientsLayoutArray);
+
+ingredientsList.append(...makeListFromArray(ingredients));
