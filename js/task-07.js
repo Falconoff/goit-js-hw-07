@@ -5,6 +5,5 @@ changeFontSize();
 rangeEl.addEventListener('input', changeFontSize);
 
 function changeFontSize() {
-  // console.log(rangeEl.value);
   textEl.style.fontSize = rangeEl.value + 'px';
 }
